@@ -6,13 +6,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
+// Scrapes data from www.tomford.com using Jsoup library
 public class JsoupCrawler {
 
 	public static void main(String args[]) throws IOException {
 
 		Document d = Jsoup.connect("https://www.tomford.com/beauty/lips/").timeout(6000).get();
-		Elements e = d.select("li.grid-tile");
+		Elements e = d.select("li.grid-tile"); // parent class for each item on the page
 
 		List<LipstickModel> lipsticks = new ArrayList<>();
 
