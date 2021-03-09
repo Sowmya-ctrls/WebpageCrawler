@@ -1,4 +1,4 @@
-
+// Model class for lipstick realworld object
 public class LipstickModel {
 
 	String prodName;
