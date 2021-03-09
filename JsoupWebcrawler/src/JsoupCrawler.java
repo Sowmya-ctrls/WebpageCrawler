@@ -42,7 +42,7 @@ public class JsoupCrawler {
 			lipsticks.add(currentLipModel); // adding into list of LipstickType objects
 		}
 
-		PrintToCSV.printToCSVFile(lipsticks);// printing list of LipstickType LipstickType objects to csv file
+		PrintToCSV.printToCSVFile(lipsticks);// printing list of LipstickModel objects to csv file
 
 	}
 
